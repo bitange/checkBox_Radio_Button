@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="What Combination do you Want"
+        android:textSize="23sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion">
+
+
+        <RadioButton
+            android:id="@+id/rbWali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wali" />
+
+        <RadioButton
+            android:id="@+id/rbUgali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ugali" />
+
+
+        <RadioButton
+            android:id="@+id/rbGitheri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Githeri" />
+
+        <RadioButton
+            android:id="@+id/rbChapati"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapati" />
+
+
+        <RadioButton
+            android:id="@+id/rbMatoke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matoke" />
+
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbNyama"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Nyama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbManagu">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/cbMaharagwe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Maharagwe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgFood">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/cbDengu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Dengu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbMaharagwe">
+
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/cbManagu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Managu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbDengu">
+
+    </CheckBox>
+
+    <Button
+        android:id="@+id/btnButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="ORDER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cbNyama">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnButton">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
