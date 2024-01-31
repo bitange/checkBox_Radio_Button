@@ -60,77 +60,15 @@ class MainActivity : AppCompatActivity() {
                     (if (isMaharagweChecked) "\nMaharagwe" else "") +
                     (if (isDenguChecked) "\nDengu" else "") +
                     (if (isManaguChecked) "\nManagu" else "") +
-                    (if (isNyamaChecked) "\nNyama" else " ")+
-                    Toast.makeText(applicationContext,"success", Toast.LENGTH_LONG).show()
+                    (if (isNyamaChecked) "\nNyama" else "")
 
-            // Set the display strin to the displayTextView
+// Set the display string to the displayTextView
             displayTextView.text = displayString
+
+
+
         }
 
 
-        }}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            // or
-
-
-//        orderButton.setOnClickListener {
-//            val checkedFoodRadioButtonId = foodGroup.checkedRadioButtonId
-//            val selectedFood = findViewById<RadioButton>(checkedFoodRadioButtonId)
-//
-//            val checkboxes = listOf(maharagwe, dengu, managu, nyama)
-//            val selectedItems = checkboxes
-//                .filter { it.isChecked }
-//                .joinToString("\n") { it.text.toString() }
-//
-//            val displayString = "You ordered:\n${selectedFood.text}" +
-//                    if (selectedItems.isNotEmpty()) "\n$selectedItems" else ""
-//
-//            displayTextView.text = displayString
-   //     }
-//    }
-//}//
+        }
+}
